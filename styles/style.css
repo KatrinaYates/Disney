@@ -1,0 +1,56 @@
+body {
+    font-family: 'made_tommylight', Arial, sans-serif;
+    color: #00233c;
+}
+
+nav, .dropdown-menu, .btn, nav a {
+    background-color: #012169;  
+    color: white!important;
+}
+
+.nav-link:focus {
+outline: none;
+}
+
+.btn:hover, nav a:hover {
+    color: rgb(243, 217, 158) !important;
+}
+
+
+.dropdown-item:hover {
+    background-color: #012169;  
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+img {
+    width: 100%;
+}
+
+.cardSection {
+    background-color: rgb(245, 251, 252);
+}
+
+.myWidth {
+    width: 90%;
+    padding: 10px;
+}
+
+.picText {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    right: 10px;
+    color: white;
+}
+
