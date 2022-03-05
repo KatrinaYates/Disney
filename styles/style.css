@@ -3,6 +3,8 @@ body {
     color: #00233c;
 }
 
+
+/* navbar */
 nav, .dropdown-menu, .btn, nav a {
     background-color: #012169;  
     color: white!important;
@@ -16,11 +18,12 @@ outline: none;
     color: rgb(243, 217, 158) !important;
 }
 
-
 .dropdown-item:hover {
     background-color: #012169;  
 }
 
+
+/* sizes */
 h1 {
     font-size: 2em;
 }
@@ -33,24 +36,109 @@ p {
     font-size: 1em;
 }
 
-img {
-    width: 100%;
-}
 
+/* pictures */
 .cardSection {
     background-color: rgb(245, 251, 252);
 }
 
-.myWidth {
-    width: 90%;
-    padding: 10px;
-}
-
 .picText {
     position: absolute;
-    top: 8px;
-    left: 16px;
-    right: 10px;
-    color: white;
+    top: 40%;
+    color: black;
+    text-align: center;
+    background-color: rgba(244, 217, 158, 0.5);
 }
 
+img {
+    width: 100%;
+}
+
+.myWidth {
+    max-width: 1500px;
+}
+
+
+/* picture shapes */
+.dodeca, .dodeca div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 45%;
+  }
+  .dodeca {
+    transform: rotate(120deg);
+  }
+  .dode1 {
+    transform: rotate(-60deg);
+  }
+  .dode2 {
+    transform: rotate(-60deg);
+    vertical-align: center;
+  }
+  
+
+/* wave animation */
+
+  .transition {
+    position:relative;
+    text-align:center;
+    color: white;
+    background-image: url(./pics/disney1.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .inner-transition {
+    height:65vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+  
+  /* Animation */ 
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+  }
