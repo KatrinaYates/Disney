@@ -3,12 +3,10 @@ body {
     color: #00233c;
 }
 
-header img{
-max-height: 65vh;
-}
 
 .banner { 
   background-image: url(./pics/banner.png);
+
 }
 
 /* navbar */
@@ -27,6 +25,19 @@ nav a:hover {
 }
 
 
+/* header */
+.castleCircle { 
+  position: relative;
+  bottom: -60px;
+  width: 160px;
+  height: 160px;
+  background-color: #012169;
+  border: 4px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Paragraph sections */
 .textSection { 
   max-width: 1000px;
 }
@@ -111,6 +122,14 @@ p {
     background-color: rgba(244, 217, 158, 0.5);
 }
 
+.picTextLG {
+  position: absolute;
+  top: 5px;
+  color: black;
+  text-align: center;
+  background-color: rgba(244, 217, 158, 0.5);
+}
+
 img {
     width: 100%;
 }
@@ -171,7 +190,6 @@ img {
     max-height:150px;
   }
   
-  /* Animation */ 
   .parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
   }
@@ -199,22 +217,10 @@ img {
       transform: translate3d(85px,0,0);
     }
   }
-  /*Shrinking for mobile*/
+
   @media (max-width: 768px) {
     .waves {
       height:40px;
       min-height:40px;
     }
-  }
-
-
-  .castleCircle { 
-    position: relative;
-    bottom: -60px;
-    width: 160px;
-    height: 160px;
-    background-color: #012169;
-    border: 4px solid white;
-    border-radius: 50%;
-    overflow: hidden;
   }
