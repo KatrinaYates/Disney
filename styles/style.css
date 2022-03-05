@@ -3,6 +3,14 @@ body {
     color: #00233c;
 }
 
+header img{
+max-height: 65vh;
+}
+
+.banner { 
+  background-image: url(./pics/banner.png);
+}
+
 /* navbar */
 nav, .dropdown-menu, .btn, nav a {
     background-color: #012169;  
@@ -18,6 +26,10 @@ nav a:hover {
   color: rgb(243, 217, 158) !important;
 }
 
+
+.textSection { 
+  max-width: 1000px;
+}
 
 
 /* buttons */
@@ -107,6 +119,10 @@ img {
     max-width: 1500px;
 }
 
+.disney1 { 
+  background-image: url(./pics/disney1.png);
+}
+
 
 /* picture shapes */
 .dodeca, .dodeca div {
@@ -135,7 +151,6 @@ img {
     position:relative;
     text-align:center;
     color: white;
-    background-image: url(./pics/disney1.png);
     background-position: center;
     background-size: cover;
   }
@@ -190,4 +205,16 @@ img {
       height:40px;
       min-height:40px;
     }
+  }
+
+
+  .castleCircle { 
+    position: relative;
+    bottom: -60px;
+    width: 160px;
+    height: 160px;
+    background-color: #012169;
+    border: 4px solid white;
+    border-radius: 50%;
+    overflow: hidden;
   }
