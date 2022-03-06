@@ -9,22 +9,6 @@
   overflow: hidden;
 }
 
-#castleContainer:hover .arc circle { 
-  animation: offset 6s ease-out 1s;
-}
-
-#castleSection {
-  display: flex;
-  justify-content: center;
-  background-color: #012169;
-  border: 5px solid white;
-  border-radius: 50%;
-  width: 175px;
-  height: 175px;
-  z-index: 2;
-  position: absolute;
-
-}
 
 .castleContainer {
   position: relative;
@@ -45,7 +29,7 @@
   filter: drop-shadow( 2px -4px 5px white);
 }
 
-.arc circle {
+.castleContainer:hover .arc circle {
   cx: 50%;
   cy: 100%;
   r: 53.5%;
@@ -54,14 +38,15 @@
   stroke: white;
   transform-origin: 50% 50%;
   transform-box: fill-box;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: offset 6s ease-out 1s;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 600;
+  animation: offset 5s ease-out forwards;
 }
+
 
 @keyframes offset {
   to {
-    stroke-dashoffset: 300;
+    stroke-dashoffset: 10;
   }
 }
 
@@ -95,16 +80,14 @@
   transition: border-radius 0.3s;
   z-index: 2;
 }
-.portcullis:hover {
-  border-radius: 50%;
-}
-.portcullis:hover::before {
+
+.castleContainer:hover .portcullis::before {
   background-color: #012169;
   border-radius: 50%;
   width: 60%;
   height: 60%;
 }
-.portcullis:hover::after {
+.castleContainer:hover .portcullis::after {
   background-color: #012169;
   border-radius: 50%;
   width: 60%;
